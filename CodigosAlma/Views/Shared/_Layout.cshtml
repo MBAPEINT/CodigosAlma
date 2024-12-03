@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/ICONO.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: AgriCulture
+    * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+    * Updated: Aug 07 2024 with Bootstrap v5.3.3
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+
+    <style>
+        .whatsapp-button {
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: whitesmoke;
+            background: linear-gradient(145deg, #13302B, #13302B);
+            border: none;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background: linear-gradient(145deg, #13302B, #13302B;
+            color: #e0e0e0;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), -5px -5px 20px rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .whatsapp-button:active {
+            transform: scale(0.98);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 10px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center position-relative">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/CODIGOS.png" alt="AgriCulture">
+                <!-- <h1 class="sitename">AgriCulture</h1>  -->
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#services" class="active">Inicio</a></li>
+                    <li><a href="#about-3">Sobre Nosotros</a></li>
+                    <li><a href="#services-2">Galeria de Recuerdos</a></li>
+                    <li>
+                        <a href="https://wa.me/986249435?text=Hola%20Códigos%20del%20Alma,%20quisiera%20obtener%20más%20información." target="_blank">
+                            <button class="whatsapp-button">WhatsApp</button>
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main role="main" class="main">
+        @RenderBody()
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <span class="sitename">Códigos del Alma</span>
+                        </a>
+                        <div class="footer-contact">
+                            <p>Perú</p>
+                            <p><strong>Phone:</strong> <span>+51 986249435</span></p>
+                            <p><strong>Email:</strong> <span>ventas@rqerdoseternos.com</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Enlaces Útiles</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#about-3">Sobre Nosotros</a></li>
+                            <li><a href="#services-2">Galería de Recuerdos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Contáctanos</h4>
+                        <ul>
+                            <li>
+                                <a href="https://wa.me/986249435?text=Hola%20Códigos%20del%20Alma,%20quisiera%20obtener%20más%20información." target="_blank">
+                                    <span class="whatsapp-number">986249435</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-motivation">
+                        <h4>Recuerda</h4>
+                        <p>Recuerda siempre que los recuerdos que atesoramos nunca se desvanecen. ¡Haz que cada momento cuente!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright text-center">
+            <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <div>
+                        © Copyright <strong><span>Códigos del Alma</span></strong>. Todos los Derechos Reservados
+                    </div>
+                    <div class="credits">
+                        Diseñado por <a href="https://devscribelo.live/" target="_blank">DevScribelo</a>
+                    </div>
+                </div>
+
+                <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                    <a href="https://www.instagram.com/codigosdelalma_qr/" target="_blank" title="Síguenos en Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@@codigodelalma" target="_blank" title="Síguenos en TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
