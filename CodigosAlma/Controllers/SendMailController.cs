@@ -1,5 +1,6 @@
 ﻿using CodigosAlma.Data;
 using Microsoft.AspNetCore.Mvc;
+using CodigosAlma.Models;
 using Microsoft.Extensions.Configuration;
 using System;
 
@@ -15,17 +16,19 @@ namespace CodigosAlma.Controllers
         }
 
         [HttpPost]
-        public IActionResult EnviarCorreo()
+        public IActionResult EnviarCorreo([FromBody] CMMailRequest request)
         {
+            string contacto = request.Contacto;
+            Console.WriteLine(contacto);
             SendMail mail = new SendMail();
             try
             {
-                mail.Enviar();
-                return Json(new { success = true, message = "Correo Enviado correctamente" });
+                mail.Enviar(contacto);
+                return Json(new { success = true, message = "Correo o número enviado con éxito" });
             }
             catch (Exception e)
             {
-                return Json(new { success = false, message = "Error al enviar correo: " + e.Message });
+                return Json(new { success = false, message = "Error al enviar el contacto: " + e.Message });
             }
         }
     }

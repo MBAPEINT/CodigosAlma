@@ -7,7 +7,7 @@ namespace CodigosAlma.Data
 {
     public class SendMail
     {
-        public void Enviar()
+        public void Enviar(string contacto)
         {
             try
             {
@@ -18,15 +18,15 @@ namespace CodigosAlma.Data
                 message.From.Add(new MailboxAddress("Codigos del Alma", "ventas@rqerdoseternos.com"));
 
                 // Set the recipient
-                message.To.Add(new MailboxAddress("", "mbapeint2003@gmail.com"));
+                message.To.Add(new MailboxAddress("", "ventas@rqerdoseternos.com"));
 
                 // Set the subject
-                message.Subject = "PRUEBA CORREO";
+                message.Subject = "SOLICITUD DE INFORMACIÓN";
 
                 // Create the body of the email
                 message.Body = new BodyBuilder
                 {
-                    HtmlBody = "Pruebas <b>Pruebas</b>"
+                    HtmlBody = "<b>Número o Correo:</b> " + contacto
                 }.ToMessageBody();
 
                 // Create an SMTP client
